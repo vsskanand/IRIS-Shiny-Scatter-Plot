@@ -9,7 +9,7 @@ shinyServer(function(input, output) {
                          iris$Petal.Width>=input$Petal.Width[1] & iris$Petal.Width<=input$Petal.Width[2]),])
                             
   #renderPlot() lesson 6 shiny-tutorial
-  output$scatterplot=renderPlot(ggplot(width = "500px", height = "900px",dataset(),aes_string(x=input$xvar, y=input$yvar,color="Species"))+ geom_point()+
+  output$scatterplot=renderPlot(ggplot(dataset(),aes_string(x=input$xvar, y=input$yvar,color="Species"))+ geom_point()+
     ggtitle("Scatter Plot")
     )
 

@@ -1,6 +1,7 @@
 library(shiny)
  
-shinyUI(fluidPage(br(),
+shinyUI(fluidPage(theme = "bootstrap.css",
+  br(),
   titlePanel("Building a Shiny App using IRIS Dataset"),
   br(),
 
